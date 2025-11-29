@@ -1,60 +1,68 @@
-# SAE_R502_Piloter_un_projet_informatique_GNS3
-Projet de la SAE R502 - Conception et pilotage d’un réseau GNS3 en méthode Agile.
+# **SAE R502 – Piloter un projet informatique (Marionnet)**
+Projet de la SAE R502 – Conception et pilotage d’un réseau informatique réalisé sous Marionnet, en appliquant une organisation Agile (Scrum).
 
-## 🎯 Objectif du projet
-Ce dépôt a été créé dans le cadre de la **SAE R502 – Piloter un projet informatique**.  
-L’objectif est de **concevoir, configurer et piloter un réseau complet sous GNS3**, en appliquant une démarche **Agile (Scrum)** pour organiser le travail et assurer le suivi du projet.
+## **Objectif du projet**
+Ce dépôt a été créé dans le cadre de la SAE R502 – Piloter un projet informatique.
+L’objectif principal est de :
 
----
+* Concevoir une topologie réseau complète sous Marionnet
+* Configurer les machines virtuelles
+* Mettre en place les VLAN, le routage et les services réseau
+* Piloter le projet selon la méthode Agile (Scrum)
+* Documenter l’avancement et produire une soutenance finale
 
-## 👥 Équipe de projet
-- **Lahoucine El Merabet**  
-- **Keyane Lhamzi**
+## **Équipe projet**
+* Lahoucine El Merabet
+* Keyane Lhamzi
 
-Projet réalisé dans le cadre du **BUT Réseaux & Télécommunications – Spécialité Cybersécurité**  
-à l’**IUT de Villetaneuse – Université Sorbonne Paris Nord**.
+Projet réalisé dans le cadre du
+BUT Réseaux & Télécommunications – Parcours Cybersécurité
+IUT de Villetaneuse – Université Sorbonne Paris Nord
 
----
+## **Organisation du projet (Agile – Scrum)**
+Le projet est structuré en quatre sprints :
 
-## 🗓️ Organisation du projet
-Le projet est réparti en **4 sprints** et une **soutenance finale** :
+| Sprint   | Objectif                                                    |
+| -------- | ----------------------------------------------------------- |
+| Sprint 1 | Création de la topologie Marionnet (machines + switchs)     |
+| Sprint 2 | Configuration IP, VLAN et switchs                           |
+| Sprint 3 | Mise en place des services réseau (DHCP, routage, firewall) |
+| Sprint 4 | Documentation, rapport, soutenance                          |
 
-| Semaine | Sprint | Objectif principal |
-|----------|---------|------------------|
-| Semaine 1 | Création de la topologie brute dans GNS3 |
-| Semaine 2 | Câblage et configuration réseau (DHCP, routage) |
-| Semaine 3 | Sécurité et services (pare-feu, DNS, Web) |
-| Semaine 4 | Documentation et soutenance |
-
----
-
-## 🧱 Structure du dépôt
+## **Structure du dépôt**
+```
+/docs                 → Captures, schémas, tests réseau
+/marionnet_project    → Projet Marionnet (topologie, câblage, VMs)
+/rapport              → Rapport final, planning, backlog, livrables
+README.md             → Documentation principale
 ```
 
-/docs            → Schémas, captures et tests
-/config          → Fichiers de configuration (DHCP, DNS, iptables)
-/gns3_project    → Projet GNS3 (.gns3, .net, exports)
-/rapport         → Documents PDF (planning, backlog, compte rendu)
+## **Outils et technologies**
+* Marionnet (émulation réseau)
+* Debian / BusyBox (machines virtuelles)
+* VLAN, trunk, routage statique
+* DHCP et services réseau
+* Git / GitHub (gestion de versions)
+* Trello (méthode Agile – Scrum)
+* Shell / Bash
 
-```
----
+## **État actuel du projet**
+Topologie Marionnet :
+* Machines M1 à M6 et MA à MF créées
+* Switchs configurés
+* Câblage logique terminé
 
-## 🧰 Outils et technologies
-- **Simulation réseau :** GNS3  
-- **Systèmes :** Linux Debian  
-- **Scripts :** Bash / Shell  
-- **Gestion de version :** Git / GitHub  
-- **Méthodologie :** Agile Scrum (Trello)  
+VLAN :
+* VLAN 10 : M1, M2, M3, M4, M5, M6
+* VLAN 20 : MA, MB, MC, MD, ME, MF
 
----
+Interconnexion :
+* Liaisons entre switchs configurées en trunk
 
-## 🏁 État actuel du projet
-✅ **Sprint 1 en cours : Création de la topologie brute dans GNS3**  
-Le projet GNS3 est en cours de mise en place, et la base du dépôt GitHub est initialisée.
+Prochaine étape :
+* Configuration du routage et du DHCP
 
----
-
-## 🔗 Liens utiles
+## Liens utiles
 - Trello du projet : *https://trello.com/invite/b/69137cc0c72c7519468f0a30/ATTI39368d6616d92829a56b9d08e44afc1aCB427B90/kanban-sae-r502-piloter-un-projet-informatique*  
 - IUT de Villetaneuse – Université Sorbonne Paris Nord  
 ```
